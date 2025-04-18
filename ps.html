@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+        }  
+
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        
+        .red{
+            background-color: red;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+
+        .blue{
+            background-color: rgb(85,233,238);
+            position: absolute;
+            top:100px;
+            left: 100px;
+        }
+
+        .yellow{
+            background-color:yellow;
+            position: absolute;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!------------------------------------------------------------- Leap Year-------------------------------------------------
+        ------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- <h2>Leap Year</h2>
+
+    <script>
+        var year = 2024;
+        if(year % 4 == 0){
+            if(year % 100 == 0){
+               if(year % 400 == 0){
+                console.log("The year " + year + " is  a leap year");
+               }
+               else{
+                console.log("The year " + year + " is Not a leap year");
+               }
+            }
+            else{
+                console.log("The year " + year + " is a leap year");
+            }
+        }
+        else{
+            console.log("The year " + year + " is Not a leap year");
+        }
+    </script> -->
+   
+<!------------------------------------------------------------- Swap Two Number -------------------------------------------------
+        ------------------------------------------------------------------------------------------------------------------- -->
+
+   <!-- <h2>Swap Two Number </h2>
+
+   <script>
+       var a = 10; b = 20;
+       console.log("After");
+       console.log("a is " +a +" And "+ "b is " +b);
+       c=a;
+       a=b;
+       b=c;
+       console.log("Before");
+       console.log("a is " +a +" And "+ "b is " +b);
+   </script> -->
+
+
+   <!------------------ for loop Table--------------- -->
+
+   <!-- <script>
+     for(var num = 1; num<= 10; num++){
+       var tableOf = 8;
+       console.log(tableOf + " * " + num + " = " + tableOf * num);
+     }
+   </script> -->
+
+
+<!------------------------------------------------------------- Funntion -------------------------------------------------
+        ------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+        <!-- Function defination -->
+      
+      <!-- <script>
+          
+          function howMany){
+            var a=10 , b=20;
+            var total = a+b;   
+            console.log(total)    
+          }
+          sum();
+      </script> -->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        const name = ['kaustubh' , 'vinit' , 'lokesh' , 'hitesh'];
+        console.log(name); 
+        console.log(name.pop());
+        console.log(name);
+    </script> -->
+
+
+
+<!-- .shif()   Method    
+
+    <script>
+        const name = ['kaustubh' , 'vinit' , 'lokesh' , 'hitesh'];
+        console.log(name); 
+        console.log(name.shift());
+        console.log(name);
+    </script> -->
+
+
+
+    <!-- challenge .splice() method ----------------------------------------======================-->
+  
+    <!-- solution 1  -->
+
+    <!-- <script>
+        const months = ['JAN' , 'FEB' , 'MARCH' , 'APRIL' , 'JUNE' , 'JULY' , 'NOV'];
+
+        const  newMonth = months.splice(months.length,0,'Dec');
+        console.log(months);
+    </script> -->
+
+
+ <!-- solution 2  -->
+
+ <!-- <script>
+    const months = ['JAN' , 'FEB' , 'MARCH' , 'APRIL' , 'JUNE' , 'JULY' , 'NOV'];
+
+
+    const  newMonth = months.splice(months.length,0,'Dec');
+    console.log(newMonth);
+</script> -->
+
+
+
+<!-- sol 3  -->
+
+<!-- <script>
+    const months = ['JAN' , 'FEB' , 'March' , 'APRIL' , 'JUNE' , 'JULY' , 'NOV'];
+
+    const indexOfMonth = months.indexOf('March');
+
+    if(indexOfMonth != -1){
+    
+        const  updateMonth = months.splice(indexOfMonth,1,'MARCH');
+        console.log(months)
+    }
+    else{
+        console.log('Data Not Found');    
+    };
+
+
+    //  arr1.
+</script> -->
+
+
+<!-- Multiply each element by 2 and return only those elements which are greater than 10?  -->
+
+<!-- <script>
+  let arr = [ 2, 3, 4, 6, 8];
+  let arr2 = arr.map((curElm) => curElm * 2).filter((curElm) => curElm > 10);
+ console.log(arr2);
+</script> -->
+
+
+
+<!-- <script>
+    let arr = [5, 6, 2];
+    let sum = arr.reduce((accumulator, curElm, indx , arr ) =>{
+         return accumulator += curElm;
+    })
+      console.log(sum);
+</script> -->
+
+<!-- <script>
+    let arr = [ 2, 3, 4, 6, 8];
+     let arr2 = arr.map((curElm) => curElm * 2).filter((curElm) =>curElm > 10).reduce((accumulator, curElm, indx , arr ) =>{
+           return accumulator += curElm;
+  });
+   console.log(arr2);
+  </script> -->
+  
+<!-- <script>
+                let  cities = [ "BSL", "HYD" , "PUNE"];
+                 cities.sort();
+                 console.log(cities);
+                 cities.reverse();
+                 console.log(cities);
+
+</script> -->
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------------------------challnge Twitter? ---------
+    --------------------------------------------------------------------------------------------------------------------------->
+<!-- <script>
+
+// Que – Display only 280 characters of a string like the one use in Twitter?
+
+let myTweets = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum amet illum numquam vel enim repudiandae eaque possimus, similique incidunt ipsa vitae nobis omnis. Esse facere saepe quasi consequuntur similique? Architecto, soluta distinctio aliquam incidunt deleniti modi laboriosam quibusdam dolores aspernatur consequuntur. Nobis non ducimus id atque, voluptate explicabo nesciunt quisquam voluptates, eum libero accusamus. Et dolore ab voluptas vitae impedit qui similique cumque nemo deleniti temporibus, voluptatem, cupiditate ducimus ipsam veritatis atque dicta tempore autem totam in facere ipsum soluta inventore. In nam atque dolorum porro corrupti sequi provident autem repellendus reprehenderit veritatis ipsa quaerat, laborum qui ullam eos maxime corporis inventore vero sint asperiores non. Fugiat in illo adipisci dolores. Esse ad, at modi eveniet iure commodi sapiente tempora odio! Fugiat, ducimus libero maxime fugit tempore a dolorum exercitationem dolor nesciunt magnam non temporibus sapiente reprehenderit, ipsam deleniti sequi consectetur? Qui nesciunt consectetur, ut autem officia dicta praesentium obcaecati a, maxime, placeat magni eaque. Dicta eaque fugit blanditiis placeat sint corporis fugiat maxime nulla tempora earum quaerat consectetur corrupti culpa enim eos mollitia quis, labore impedit modi odio iure aspernatur consequuntur dignissimos! Dolores facilis recusandae beatae incidunt delectus laudantium consequatur, est nostrum sed non provident temporibus porro tempore obcaecati quibusdam eligendi aliquam velit fugiat laborum ex aliquid ab reprehenderit ratione. Enim suscipit libero illo itaque possimus! Eum numquam facere nam facilis fugit accusamus aut, optio dignissimos est ex quos tempore adipisci non doloremque et necessitatibus veritatis accusantium labore nulla sed praesentium. Ducimus nihil excepturi suscipit nisi debitis consequatur obcaecati ex eaque, officia facere ullam facilis nostrum aliquam culpa error, veniam laboriosam at soluta nesciunt voluptate. Maiores, nisi sunt repudiandae temporibus mollitia dicta assumenda placeat vel. Velit dolores ratione labore."
+
+let myActualTweet = myTweets.slice(0,280)   //0-279
+console.log(myActualTweet);
+console.log(myActualTweet.length);
+</script> -->
+
+
+<!-- ------------------------------------------------------------------------challnge Unicode Of last charcter in string ? ---------
+    --------------------------------------------------------------------------------------------------------------------------->
+
+
+<script>
+// let str = "Kaustubh Kolhe";
+
+// let lastChar = str.length - 1; // last char find out -1 = last index number
+// console.log(lastChar);
+
+// console.log(str.charCodeAt(lastChar));
+
+
+// var str = "Kaustubh Kolhe";
+// console.log(str[0]);
+
+
+
+
+
+
+
+// --------------------------------------------------------other useful method
+// ------------------------------------------------------------------------
+
+
+
+// let myName = "kaustubh KOlHe";
+// console.log(myName.toUpperCase());
+// console.log(myName.toLowerCase());
+
+
+
+
+
+
+  
+// let fName = "Kaustubh"
+// let lName = "Kolhe" 
+// console.log(fName.concat(lName));  //No space 
+// console.log(fName.concat(" " ,lName));  // " " For space 
+// console.log(`${fName} ${lName}`);   // ECMA 
+
+
+
+
+// var str = "            Kaustubh              kolhe         ";
+// console.log(str.trim());
+
+
+
+
+
+
+
+// var txt = "a,b,c,d,e";   //string
+// console.log(txt.split(","));  // Split on commas
+// console.log(txt.split(" "));  // Split on space
+// console.log(txt.split(" | "));  // Split on Pipe ( | )
+
+
+
+
+
+
+
+
+// ------------------------------------Date & Time Object -----------------------------------------------------
+
+
+// new Date()
+
+// new Date(year, month, day, hours, minutes, seconds, milliseconds)
+// // It take 7 arguments 
+
+// new Date (milliseconds)
+// // we cannot avoid month section 
+
+// new Date(date String) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let currDate = new Date ();
+// console.log(currDate);     
+// // output
+// // Thu Jul 15 2021 09:29:05 GMT+0530 (India Standard Time)
+
+// // GMT ==>  Greenwich Mean Time   indian time 5.30 min ahead 
+
+// console.log(new Date().toLocaleString()); // 7/15/2021 , 10:11:25
+
+// console.log(new Date().toString()); // Thu Jul 17 2021 , 10:11:25
+
+
+// console.log(Date.now());
+
+
+
+
+
+
+// var d = new Date(2021, 0, 27, 10, 35, 30, 0);
+// console.log(d.toLocaleString());
+
+// // output
+// //1/27/2021, 10:35:30 AM
+
+
+
+// var d = new Date("January 27, 2002 00:35:00");
+// console.log(d.toLocaleString());
+
+// // output
+// // 1/27/2002, 12:35:00 AM
+
+
+
+
+
+
+
+
+
+// var d = new Date(0);
+// // output
+// // 1/1/1970, 5:30:00 AM
+
+// var d = new Date(1626326934992); 
+// // output
+// // 7/15/2021, 10:58:54 AM
+// console.log(d.toLocaleString());
+
+
+
+
+// How to get the indivisual date
+
+// const curDate = new Date();
+
+// console.log(curDate.toLocaleString());  // 7/17/2021, 12:14:56 PM
+
+// console.log(curDate.getFullYear()); // 2021
+
+// console.log(curDate.getMonth());   // 6
+
+// console.log(curDate.getDate());  // 17
+
+// console.log(curDate.getDay());  // 6  --> Saturday 
+
+
+
+
+// // How to SET the indivisual date
+
+// console.log(curDate.setFullYear(2022));
+
+// // The setFullYear() Method can optionally set month and  day
+
+// console.log(curDate.setFullYear(2022, 27, 0));
+
+// console.log(curDate.setMonth(0)); 
+
+// console.log(curDate.setDate(17));
+
+// console.log(curDate.toLocaleString());
+
+
+
+
+
+
+
+// ----------------------------TIME METHOD-----------------------------
+
+// const curDate = new Date();
+
+
+// // How to get the indivisual Time
+
+
+// console.log(curDate.getTime());  // 1626505252400
+
+// // The getTime() Method returns the number of Milliseconds 
+// // since january 1, 1970
+
+// console.log(curDate.getHours());  // 12
+
+// // The getHours() Method returns the hours of a date as a number (0 - 23 )
+
+// console.log(curDate.getMinutes()); // 30 
+
+// console.log(curDate.getSeconds());  // 52
+
+
+// console.log(curDate.getMilliseconds());  // 
+
+
+
+
+// ---------------------------------------------------------------------------------------------
+
+// let curDate = new Date();
+
+// //  How to set the indivisual Time
+
+
+// console.log(curDate.setTime())
+
+// console.log(curDate.setHours(00));  
+
+// console.log(curDate.setMinutes(35)); 
+
+
+// console.log(curDate.setSeconds(15));  
+
+
+// console.log(curDate.setMilliseconds(5));  
+
+
+
+
+// ---------------------------------Challnge------------------------------------------
+
+
+// new Date().toLocaleTimeString(); // Only Time
+
+// new Date().toLocaleDateString(); // Only Date
+
+// new Date().toLocaleString();
+</script>
+
+
+
+
+
+
+<div class="red"></div>
+<div class="blue"></div>
+<div class="yellow"></div>
+</body>
+</html>
