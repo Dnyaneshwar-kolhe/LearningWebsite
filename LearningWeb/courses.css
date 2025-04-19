@@ -1,0 +1,196 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    --main-color:#283526;
+    --primry-color:#888888;
+    --buttun-background:#4b709e;
+    --primry-buttun-background:#fe7649;
+    --backgroung-color:#e2efff;
+      background-color:#ecf0f3 ;
+}
+
+h1,h2{
+    font-family: 'Baloo Bhai 2';
+    color:var(--main-color);
+}
+
+h4,h3{
+    font-family:'sans-serif';
+    color:var(--main-color);
+}
+
+h3{
+    font-weight: 750;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+
+p,
+a,
+li,
+button{
+    font-family:'sans-serif';
+    color: var(--primry-color);
+}
+
+p{
+    font-size: 2rem;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    background: #ecf0f3;
+            box-shadow: -3px -3px 7px #ffffff,
+                        3px 3px 5px #ceced1;
+}
+
+nav .navbar a{
+    font-size: 1.6rem;
+    color: #31344b;
+}
+
+.navbar a{
+    padding: 10px 5px;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1;
+    transition: all 0.3s eases;
+    position: relative;
+}
+
+.navbar  a li:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow:inset -3px -3px 7px #ffffff,
+               inset 3px 3px 5px #ceced1;
+}
+.navbar a li:hover{
+    color: orangered;
+}
+
+.navbar .active li{
+    color:blue;
+}
+
+
+ /* --------------------------------------C -language page-------------------------------  */
+
+ /*-------------- History-------- */
+.history{
+    width: 100%;
+    /* height: 100vh; */
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem  1rem;
+}
+
+.history .left{
+    width: 20%;
+}
+ .history .left img{
+    width: 20rem;
+    border-radius: 2rem;
+    margin:2rem 8rem;
+
+    box-shadow:0 0 15px #000;
+ }
+
+.history .right{
+    width: 80%;
+    text-align: start;
+}
+
+ .history .right h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+ .history .right  h3{
+    width: 70rem;
+    font-size: 2rem;
+ }
+
+ .history .right p{
+    width: 80rem;
+    text-align: center;
+    }
+
+
+
+    footer h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+
+
+
+@media (max-width:770px) {
+    nav .navbar{
+        
+    }
+
+
+
+    .history{
+
+    }
+
+    .history .left{
+    width: 10%;
+}
+ .history .left img{
+    width: 15rem;
+    border-radius: 2rem;
+    margin:2rem 2rem;
+
+    box-shadow:0 0 15px #000;
+ }
+
+.history .right{
+    width: 100%;
+}
+.history .right h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+ .history .right  h3{
+    width: 50rem;
+    font-size: 2rem;
+    line-height: 5rem;
+ }
+
+ .history .right p{
+    width: 50rem;
+    line-height: 3.6rem;
+    }
+
+}
